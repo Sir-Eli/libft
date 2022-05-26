@@ -6,7 +6,7 @@
 /*   By: esirnio <esirnio@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/02 15:53:06 by esirnio           #+#    #+#             */
-/*   Updated: 2021/12/17 16:33:24 by esirnio          ###   ########.fr       */
+/*   Updated: 2022/05/24 13:37:18 by esirnio          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,6 +17,9 @@
 # include <unistd.h>
 # include <stdlib.h>
 # include <string.h>
+# define BUFF_SIZE 10
+# define MAX_FD 4096
+
 
 typedef struct s_list
 {
@@ -25,6 +28,7 @@ typedef struct s_list
 	struct s_list	*next;
 }					t_list;
 
+int	get_next_line(const int fd, char **line);
 char	**ft_free_array(char **arr);
 void	ft_putchar(char c);
 void	ft_putchar_fd(char c, int fd);

@@ -25,15 +25,17 @@ SRCS = ft_atoi.c ft_bzero.c ft_isalnum.c ft_isalpha.c ft_isascii.c ft_isdigit.c\
 OBJ = *.o
 COMP = gcc -c
 FLAGS = -Wall -Wextra -Werror
-INCLUDES = -I includes/
+HEADS = libft.h
 
 all: $(NAME)
 
 $(NAME):
-	$(COMP) $(FLAGS) $(INCLUDES) $(SRCS)
-	ar rcs $(NAME) $(OBJ)
+	@$(COMP) $(FLAGS) $(HEADS) $(SRCS)
+	@ar rcs $(NAME) $(OBJ)
+	@echo make done
 clean:
 	rm -f $(OBJ)
+	rm -f *.gch
 fclean: clean
 	rm -f $(NAME)
 re: fclean all
