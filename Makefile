@@ -6,7 +6,7 @@
 #    By: esirnio <esirnio@student.42.fr>            +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2021/11/08 16:33:11 by esirnio           #+#    #+#              #
-#    Updated: 2021/12/17 16:33:14 by esirnio          ###   ########.fr        #
+#    Updated: 2022/06/28 13:41:52 by esirnio          ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -21,7 +21,7 @@ SRCS = ft_atoi.c ft_bzero.c ft_isalnum.c ft_isalpha.c ft_isascii.c ft_isdigit.c\
 		ft_memdel.c ft_strnew.c ft_strdel.c ft_strclr.c ft_striter.c ft_striteri.c\
 		ft_strmap.c ft_strmapi.c ft_strsub.c ft_putstr_fd.c ft_putnbr_fd.c\
 		ft_putendl_fd.c ft_lstnew.c ft_lstdelone.c ft_lstdel.c ft_lstadd.c ft_lstiter.c\
-		ft_lstmap.c ft_intlen.c ft_free_array.c get_next_line.c
+		ft_lstmap.c ft_intlen.c ft_free_array.c get_next_line.c ft_itoa_base.c
 OBJ = *.o
 COMP = gcc -c
 FLAGS = -Wall -Wextra -Werror
